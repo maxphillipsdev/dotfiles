@@ -7,7 +7,7 @@
 - link:
     ~/.gitconfig: gitconfig
     ~/.zshrc: zshrc
-    ~/.vimrc: vimrc
+    ~/.config: config
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]

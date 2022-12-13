@@ -11,7 +11,7 @@
         "revision": "21553a76df44df204fb11f7e57cde9ff3f23d047"
       },
       "homebrew/core": {
-        "revision": "503466e4c51cc9b830928233f4ff36c36475b2ab"
+        "revision": "4049bcfe1df7231ff0448159fe75bc7847c76702"
       },
       "buo/cask-upgrade": {
         "revision": "d9151be6678eb5bb7a729981778f786492ec5cb5"
@@ -1235,7 +1235,7 @@
       "ventura": {
         "HOMEBREW_VERSION": "3.6.15",
         "HOMEBREW_PREFIX": "/opt/homebrew",
-        "Homebrew/homebrew-core": "503466e4c51cc9b830928233f4ff36c36475b2ab",
+        "Homebrew/homebrew-core": "4049bcfe1df7231ff0448159fe75bc7847c76702",
         "CLT": "",
         "Xcode": "14.1",
         "macOS": "13.0.1"

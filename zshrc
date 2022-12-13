@@ -5,6 +5,7 @@ source $ZPLUG_HOME/init.zsh
 # zplug plugins
 # Supports oh-my-zsh plugins and the like
 zplug "plugins/git",   from:oh-my-zsh
+zplug "spaceship-prompt/spaceship-prompt", use:spaceship.zsh, from:github, as:theme
 
 # Install plugins if there are plugins that have not been installed
 if ! zplug check --verbose; then
@@ -14,7 +15,13 @@ if ! zplug check --verbose; then
     fi
 fi
 
-zplug load --verbose
+zplug load
+
+# nvim alias
+alias vim=nvim
+
+# enable autocd
+setopt autocd 
 
 # source asdf version manager
 . /opt/homebrew/opt/asdf/libexec/asdf.sh
