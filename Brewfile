@@ -4,7 +4,15 @@ tap "homebrew/cask"
 tap "homebrew/core"
 tap "buo/cask-upgrade"
 tap "homebrew/cask-fonts"
+tap "FelixKratz/formulae"
+tap "snyk/tap"
 
+# snyk
+brew "snyk"
+# cocoapods
+brew "cocoapods"
+# sketchybar
+brew "sketchybar" 
 # ripgrep
 brew "ripgrep"
 # fzf
@@ -83,3 +91,6 @@ cask "steam"
 cask "visual-studio-code"
 # Multimedia player
 cask "vlc"
+# Ngrok
+cask "ngrok"
+
