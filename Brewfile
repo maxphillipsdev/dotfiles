@@ -5,6 +5,10 @@ tap "homebrew/core"
 tap "buo/cask-upgrade"
 tap "homebrew/cask-fonts"
 
+# ripgrep
+brew "ripgrep"
+# fzf
+brew "fzf"
 # grep but better
 brew "awk"
 # zplug (like vimplug but for zsh)

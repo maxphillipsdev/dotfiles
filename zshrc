@@ -23,6 +23,11 @@ alias vim=nvim
 # enable autocd
 setopt autocd 
 
+# fh - repeat history
+fh() {
+  print -z $( ([ -n "$ZSH_NAME" ] && fc -l 1 || history) | fzf +s --tac | sed -E 's/ *[0-9]*\*? *//' | sed -E 's/\\/\\\\/g')
+}
+
 # source asdf version manager
 . /opt/homebrew/opt/asdf/libexec/asdf.sh
 
