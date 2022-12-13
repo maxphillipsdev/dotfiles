@@ -5,6 +5,10 @@ tap "homebrew/core"
 tap "buo/cask-upgrade"
 tap "homebrew/cask-fonts"
 
+# grep but better
+brew "awk"
+# zplug (like vimplug but for zsh)
+brew "zplug"
 # Mac Apple Store CLI
 brew "mas"
 # Git

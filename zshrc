@@ -1,6 +1,25 @@
+# source zplug
+export ZPLUG_HOME=/opt/homebrew/opt/zplug
+source $ZPLUG_HOME/init.zsh
+
+# zplug plugins
+# Supports oh-my-zsh plugins and the like
+zplug "plugins/git",   from:oh-my-zsh
+
+# Install plugins if there are plugins that have not been installed
+if ! zplug check --verbose; then
+    printf "Install? [y/N]: "
+    if read -q; then
+        echo; zplug install
+    fi
+fi
+
+zplug load --verbose
+
+# source asdf version manager
 . /opt/homebrew/opt/asdf/libexec/asdf.sh
 
-# Hook in direnv
+# hook in direnv
 eval "$(direnv hook zsh)"
 
 # pnpm
