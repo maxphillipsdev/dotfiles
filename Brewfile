@@ -7,6 +7,8 @@ tap "homebrew/cask-fonts"
 tap "FelixKratz/formulae"
 tap "snyk/tap"
 
+# JetBrainsMono
+brew "font-jetbrains-mono-nerd-font"
 # snyk
 brew "snyk"
 # cocoapods
@@ -85,8 +87,6 @@ cask "react-native-debugger"
 cask "slack"
 # Music streaming service
 cask "spotify"
-# Video game digital distribution service
-cask "steam"
 # Open-source code editor
 cask "visual-studio-code"
 # Multimedia player
