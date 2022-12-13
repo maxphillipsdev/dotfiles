@@ -93,4 +93,5 @@ cask "visual-studio-code"
 cask "vlc"
 # Ngrok
 cask "ngrok"
-
+# Android Studio
+cask "android-studio"
