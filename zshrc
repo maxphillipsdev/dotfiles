@@ -1,5 +1,5 @@
 # source zplug
-export ZPLUG_HOME=/opt/homebrew/opt/zplug
+export ZPLUG_HOME=/usr/local/opt/zplug
 source $ZPLUG_HOME/init.zsh
 
 # zplug plugins
@@ -22,6 +22,9 @@ alias vim=nvim
 
 # enable autocd
 setopt autocd 
+
+# configure fzf for ctrl-r history search
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # fh - repeat history
 fh() {

@@ -7,8 +7,6 @@ tap "homebrew/cask-fonts"
 tap "FelixKratz/formulae"
 tap "snyk/tap"
 
-# JetBrainsMono
-brew "font-jetbrains-mono-nerd-font"
 # snyk
 brew "snyk"
 # cocoapods
@@ -95,3 +93,5 @@ cask "vlc"
 cask "ngrok"
 # Android Studio
 cask "android-studio"
+# JetBrainsMono
+cask "font-jetbrains-mono-nerd-font"
