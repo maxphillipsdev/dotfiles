@@ -59,6 +59,9 @@ lvim.plugins = {
       require("todo-comments").setup()
     end,
   },
+  {
+    'kristijanhusak/vim-carbon-now-sh'
+  }
 }
 
 -- github copilot
@@ -72,10 +75,37 @@ vim.opt.relativenumber = true
 
 -- general
 lvim.log.level = "info"
-lvim.format_on_save = {
-  enabled = true,
-  pattern = "*.lua",
-  timeout = 1000,
+lvim.format_on_save = true
+
+-- Prettier configuration
+local formatters = require "lvim.lsp.null-ls.formatters"
+formatters.setup {
+  {
+    exe = "prettier",
+    filetypes = {
+      "javascriptreact",
+      "javascript",
+      "typescriptreact",
+      "typescript",
+      "json",
+      "markdown",
+    },
+  },
+}
+
+-- ESLint
+local linters = require "lvim.lsp.null-ls.linters"
+linters.setup {
+  {
+    exe = "eslint",
+    filetypes = {
+      "javascriptreact",
+      "javascript",
+      "typescriptreact",
+      "typescript",
+      "vue",
+    },
+  },
 }
 
 -- keymappings <https://www.lunarvim.org/docs/configuration/keybindings>
