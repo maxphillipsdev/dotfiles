@@ -7,7 +7,7 @@
 - link:
     ~/.gitconfig: gitconfig
     ~/.zshrc: zshrc
-    ~/.config/nvim: config/nvim
+    ~/.config/lvim: config/lvim
     ~/.envrc: envrc
 
 - shell:

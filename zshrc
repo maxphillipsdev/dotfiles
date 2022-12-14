@@ -10,7 +10,6 @@ zplug "joshskidmore/zsh-fzf-history-search", from:github
 zplug "zsh-users/zsh-syntax-highlighting"
 zplug "zsh-users/zsh-autosuggestions"
 zplug "zsh-users/zsh-completions"
-zplug "kiurchv/asdf.plugin.zsh", defer:2
 
 # Install plugins if there are plugins that have not been installed
 if ! zplug check --verbose; then
@@ -24,7 +23,7 @@ fi
 zplug load
 
 # nvim alias
-alias vim=nvim
+alias vim=lvim
 
 # enable autocd
 setopt autocd 
@@ -44,6 +43,9 @@ eval "$(direnv hook zsh)"
 export PNPM_HOME="/Users/max/Library/pnpm"
 export PATH="$PNPM_HOME:$PATH"
 # pnpm end
+
+# Add lunarvim to PATH
+export PATH=/Users/max.phillips/.local/bin:$PATH
 
 # configure fzf for ctrl-r history search
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
