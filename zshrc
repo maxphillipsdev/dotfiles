@@ -6,6 +6,7 @@ source $ZPLUG_HOME/init.zsh
 # Supports oh-my-zsh plugins and the like
 zplug "plugins/git",   from:oh-my-zsh
 zplug "spaceship-prompt/spaceship-prompt", use:spaceship.zsh, from:github, as:theme
+zplug "joshskidmore/zsh-fzf-history-search", from:github
 
 # Install plugins if there are plugins that have not been installed
 if ! zplug check --verbose; then
@@ -15,6 +16,7 @@ if ! zplug check --verbose; then
     fi
 fi
 
+# load zplug
 zplug load
 
 # nvim alias
@@ -22,9 +24,6 @@ alias vim=nvim
 
 # enable autocd
 setopt autocd 
-
-# configure fzf for ctrl-r history search
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # fh - repeat history
 fh() {
@@ -41,3 +40,6 @@ eval "$(direnv hook zsh)"
 export PNPM_HOME="/Users/max/Library/pnpm"
 export PATH="$PNPM_HOME:$PATH"
 # pnpm end
+
+# configure fzf for ctrl-r history search
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
