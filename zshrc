@@ -31,7 +31,7 @@ fh() {
 }
 
 # source asdf version manager
-. /opt/homebrew/opt/asdf/libexec/asdf.sh
+. /usr/local/opt/asdf/libexec/asdf.sh
 
 # hook in direnv
 eval "$(direnv hook zsh)"
