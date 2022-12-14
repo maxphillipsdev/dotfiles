@@ -24,6 +24,9 @@
       },
       "snyk/tap": {
         "revision": "dc6ec2583d5a631b492597cfa9397aeb7f43e690"
+      },
+      "jesseduffield/lazygit": {
+        "revision": "fb55a89816f454452b2879dd1a56ae640306dcab"
       }
     },
     "brew": {
@@ -1320,6 +1323,55 @@
       "sketchybar": {
         "version": "2.11.2",
         "bottle": false
+      },
+      "lazygit": {
+        "version": "0.36.0",
+        "bottle": {
+          "rebuild": 0,
+          "root_url": "https://ghcr.io/v2/homebrew/core",
+          "files": {
+            "arm64_ventura": {
+              "cellar": ":any_skip_relocation",
+              "url": "https://ghcr.io/v2/homebrew/core/lazygit/blobs/sha256:9a75d4db80160423bdedce1aff7cad42e92b1e977caf50e2dffd2da798ad2505",
+              "sha256": "9a75d4db80160423bdedce1aff7cad42e92b1e977caf50e2dffd2da798ad2505"
+            },
+            "arm64_monterey": {
+              "cellar": ":any_skip_relocation",
+              "url": "https://ghcr.io/v2/homebrew/core/lazygit/blobs/sha256:dcb5b4c336b73a2d5afd5999ec46b2f47644b5af9945cae2cf12e942ba4240db",
+              "sha256": "dcb5b4c336b73a2d5afd5999ec46b2f47644b5af9945cae2cf12e942ba4240db"
+            },
+            "arm64_big_sur": {
+              "cellar": ":any_skip_relocation",
+              "url": "https://ghcr.io/v2/homebrew/core/lazygit/blobs/sha256:2206a8386cff28f6cb2e0f37c8656eff4a75b2adaa86fb7eb68f1dc5b6000b1f",
+              "sha256": "2206a8386cff28f6cb2e0f37c8656eff4a75b2adaa86fb7eb68f1dc5b6000b1f"
+            },
+            "ventura": {
+              "cellar": ":any_skip_relocation",
+              "url": "https://ghcr.io/v2/homebrew/core/lazygit/blobs/sha256:ca4758a1f2b71d77ff363acea9c6674fbbdbb2cc0e4b64ca5ff3eb31ba0ba11f",
+              "sha256": "ca4758a1f2b71d77ff363acea9c6674fbbdbb2cc0e4b64ca5ff3eb31ba0ba11f"
+            },
+            "monterey": {
+              "cellar": ":any_skip_relocation",
+              "url": "https://ghcr.io/v2/homebrew/core/lazygit/blobs/sha256:134491db74e4fecb5f83e9a7fd39003f183c8e54311d208c704ba039f128e6a9",
+              "sha256": "134491db74e4fecb5f83e9a7fd39003f183c8e54311d208c704ba039f128e6a9"
+            },
+            "big_sur": {
+              "cellar": ":any_skip_relocation",
+              "url": "https://ghcr.io/v2/homebrew/core/lazygit/blobs/sha256:e2bedc1f205405960d6f5a31a5430216527f6312ba8125f89b0e1920fc281ccc",
+              "sha256": "e2bedc1f205405960d6f5a31a5430216527f6312ba8125f89b0e1920fc281ccc"
+            },
+            "catalina": {
+              "cellar": ":any_skip_relocation",
+              "url": "https://ghcr.io/v2/homebrew/core/lazygit/blobs/sha256:72ca9a23d0b77b20b57a00b4fe06abdc2e7bc1def7c355a411838a9d5b3d560f",
+              "sha256": "72ca9a23d0b77b20b57a00b4fe06abdc2e7bc1def7c355a411838a9d5b3d560f"
+            },
+            "x86_64_linux": {
+              "cellar": ":any_skip_relocation",
+              "url": "https://ghcr.io/v2/homebrew/core/lazygit/blobs/sha256:737ff10826b6c948a4bf5cc8efdae0388c5fa7bd6f86e0f1121495847fc7c18d",
+              "sha256": "737ff10826b6c948a4bf5cc8efdae0388c5fa7bd6f86e0f1121495847fc7c18d"
+            }
+          }
+        }
       }
     },
     "cask": {

@@ -6,7 +6,10 @@ tap "buo/cask-upgrade"
 tap "homebrew/cask-fonts"
 tap "FelixKratz/formulae"
 tap "snyk/tap"
+tap "jesseduffield/lazygit"
 
+# lazygit
+brew "lazygit"
 # snyk
 brew "snyk"
 # cocoapods
