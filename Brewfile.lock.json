@@ -8,10 +8,10 @@
         "revision": "91a41297aa8025ac292878a677f7055da6356315"
       },
       "homebrew/cask": {
-        "revision": "d302df06b12b1834f9b4e9d0e67e340c3c7aa3f5"
+        "revision": "b9b49fc2e729932f7574f8efeefdd58bdc9959d1"
       },
       "homebrew/core": {
-        "revision": "fdcd383acdffa8ff09bc3ccc76e086b47265ac59"
+        "revision": "a73c5c2d1638dada886e38b9f57d81536a6fec57"
       },
       "buo/cask-upgrade": {
         "revision": "a0b6217a5b6b2a1e996ef0e4474fa60904704fd3"
@@ -1390,7 +1390,7 @@
         }
       },
       "ngrok": {
-        "version": "3.1.0,gMHPWQMhW1J,a",
+        "version": "3.1.0,7gHuLibjv89,a",
         "options": {
           "full_name": "ngrok"
         }
@@ -1414,7 +1414,7 @@
       "ventura": {
         "HOMEBREW_VERSION": "3.6.15",
         "HOMEBREW_PREFIX": "/opt/homebrew",
-        "Homebrew/homebrew-core": "4049bcfe1df7231ff0448159fe75bc7847c76702",
+        "Homebrew/homebrew-core": "a73c5c2d1638dada886e38b9f57d81536a6fec57",
         "CLT": "",
         "Xcode": "14.1",
         "macOS": "13.0.1"

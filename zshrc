@@ -1,5 +1,5 @@
 # source zplug
-export ZPLUG_HOME=/usr/local/opt/zplug
+export ZPLUG_HOME=$HOMEBREW_PREFIX/opt/zplug
 source $ZPLUG_HOME/init.zsh
 
 # zplug plugins
@@ -28,13 +28,8 @@ alias vim=lvim
 # enable autocd
 setopt autocd 
 
-# fh - repeat history
-fh() {
-  print -z $( ([ -n "$ZSH_NAME" ] && fc -l 1 || history) | fzf +s --tac | sed -E 's/ *[0-9]*\*? *//' | sed -E 's/\\/\\\\/g')
-}
-
 # source asdf version manager
-. /usr/local/opt/asdf/libexec/asdf.sh
+. $HOMEBREW_PREFIX/opt/asdf/libexec/asdf.sh
 
 # hook in direnv
 eval "$(direnv hook zsh)"
@@ -46,6 +41,3 @@ export PATH="$PNPM_HOME:$PATH"
 
 # Add lunarvim to PATH
 export PATH=/Users/max.phillips/.local/bin:$PATH
-
-# configure fzf for ctrl-r history search
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
