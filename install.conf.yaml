@@ -8,7 +8,6 @@
     ~/.gitconfig: gitconfig
     ~/.zshrc: zshrc
     ~/.config/lvim: config/lvim
-    ~/.envrc: envrc
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]

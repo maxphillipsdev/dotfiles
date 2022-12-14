@@ -1,5 +1,21 @@
-# source zplug
+############################################
+# Setup env vars
+#
+# pnpm
+export PNPM_HOME="/Users/max/Library/pnpm"
+export PATH="$PNPM_HOME:$PATH"
+# pnpm end
+
+# .local
+export PATH=$HOME/.local/bin:$PATH
+
+# zplug
 export ZPLUG_HOME=$HOMEBREW_PREFIX/opt/zplug
+
+############################################
+# Source stuff
+#
+# zplug
 source $ZPLUG_HOME/init.zsh
 
 # zplug plugins
@@ -33,11 +49,3 @@ setopt autocd
 
 # hook in direnv
 eval "$(direnv hook zsh)"
-
-# pnpm
-export PNPM_HOME="/Users/max/Library/pnpm"
-export PATH="$PNPM_HOME:$PATH"
-# pnpm end
-
-# Add lunarvim to PATH
-export PATH=/Users/max.phillips/.local/bin:$PATH
