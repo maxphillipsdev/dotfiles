@@ -10,6 +10,7 @@ zplug "joshskidmore/zsh-fzf-history-search", from:github
 zplug "zsh-users/zsh-syntax-highlighting"
 zplug "zsh-users/zsh-autosuggestions"
 zplug "zsh-users/zsh-completions"
+zplug "kiurchv/asdf.plugin.zsh", defer:2
 
 # Install plugins if there are plugins that have not been installed
 if ! zplug check --verbose; then
