@@ -1,2 +1,5 @@
 **.old**
 **.env**
+
+# Ignore github-copilot config
+config/github-copilot/
