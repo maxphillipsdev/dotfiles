@@ -10,7 +10,7 @@ export PATH="$PNPM_HOME:$PATH"
 export PATH=$HOME/.local/bin:$PATH
 
 # zplug
-export ZPLUG_HOME=$HOMEBREW_PREFIX/opt/zplug
+export ZPLUG_HOME=$(brew --prefix)/opt/zplug
 
 ############################################
 # Source stuff
@@ -45,7 +45,8 @@ alias vim=lvim
 setopt autocd 
 
 # source asdf version manager
-. $HOMEBREW_PREFIX/opt/asdf/libexec/asdf.sh
+. $(brew --prefix)/opt/asdf/libexec/asdf.sh
 
 # hook in direnv
 eval "$(direnv hook zsh)"
+export PATH="/usr/local/sbin:$PATH"
