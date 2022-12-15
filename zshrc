@@ -24,6 +24,7 @@ zplug "plugins/git",   from:oh-my-zsh
 zplug "spaceship-prompt/spaceship-prompt", use:spaceship.zsh, from:github, as:theme
 zplug "joshskidmore/zsh-fzf-history-search", from:github
 zplug "zsh-users/zsh-syntax-highlighting"
+zplug "birdhackor/zsh-exa-ls-plugin"
 
 # Install plugins if there are plugins that have not been installed
 if ! zplug check --verbose; then

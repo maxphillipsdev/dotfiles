@@ -9,6 +9,10 @@ tap "snyk/tap"
 tap "jesseduffield/lazygit"
 tap "khanhas/tap"
 
+# exa
+brew "exa"
+# spt spotify tui
+brew "spotify-tui"
 # spicetify spotify theme engine
 brew "spicetify-cli"
 # lazygit
