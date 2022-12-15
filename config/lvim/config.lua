@@ -64,6 +64,12 @@ lvim.plugins = {
   },
   {
     'catppuccin/nvim'
+  },
+  {
+    "MaximilianLloyd/ascii.nvim"
+  },
+  {
+    "MunifTanjim/nui.nvim"
   }
 }
 
@@ -75,11 +81,15 @@ table.insert(lvim.builtin.cmp.sources, 1, { name = "copilot" })
 vim.opt.shiftwidth = 2
 vim.opt.tabstop = 2
 vim.opt.relativenumber = true
+vim.opt.wrap = true
 vim.opt.termguicolors = true
 
 -- general
 lvim.log.level = "info"
 lvim.format_on_save = true
+
+-- dashboard / greeter
+lvim.builtin.alpha.dashboard.section.header.val = require("ascii").get_random("animals", "cats")
 
 -- Prettier configuration
 local formatters = require "lvim.lsp.null-ls.formatters"
