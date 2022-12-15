@@ -3,3 +3,5 @@
 
 config/
 !config/lvim
+!config/spicetify
+
