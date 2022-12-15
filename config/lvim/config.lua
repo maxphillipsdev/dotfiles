@@ -61,6 +61,9 @@ lvim.plugins = {
   },
   {
     'kristijanhusak/vim-carbon-now-sh'
+  },
+  {
+    'catppuccin/nvim'
   }
 }
 
@@ -72,6 +75,7 @@ table.insert(lvim.builtin.cmp.sources, 1, { name = "copilot" })
 vim.opt.shiftwidth = 2
 vim.opt.tabstop = 2
 vim.opt.relativenumber = true
+vim.opt.termguicolors = true
 
 -- general
 lvim.log.level = "info"
@@ -118,7 +122,7 @@ lvim.keys.normal_mode["<S-h>"] = ":BufferLineCyclePrev<CR>"
 lvim.keys.normal_mode["<S-o>"] = ":SymbolsOutline<CR>"
 
 -- -- Change theme settings
-lvim.colorscheme = "lunar"
+lvim.colorscheme = "catppuccin"
 
 -- After changing plugin config exit and reopen LunarVim, Run :PackerSync
 lvim.builtin.alpha.active = true
