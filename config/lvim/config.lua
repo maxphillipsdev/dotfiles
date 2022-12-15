@@ -60,16 +60,25 @@ lvim.plugins = {
     end,
   },
   {
-    'kristijanhusak/vim-carbon-now-sh'
+    "kristijanhusak/vim-carbon-now-sh"
   },
   {
-    'catppuccin/nvim'
+    "catppuccin/nvim"
   },
   {
     "MaximilianLloyd/ascii.nvim"
   },
   {
     "MunifTanjim/nui.nvim"
+  },
+  {
+    "kylechui/nvim-surround",
+    tag = "*", -- Use for stability; omit to use `main` branch for the latest features
+    config = function()
+      require("nvim-surround").setup({
+        -- Configuration here, or leave empty to use defaults
+      })
+    end
   }
 }
 
