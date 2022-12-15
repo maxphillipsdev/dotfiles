@@ -50,3 +50,4 @@ setopt autocd
 # hook in direnv
 eval "$(direnv hook zsh)"
 export PATH="/usr/local/sbin:$PATH"
+export PATH=$PATH:/Users/max.phillips/.spicetify

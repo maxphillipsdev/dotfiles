@@ -7,7 +7,10 @@ tap "homebrew/cask-fonts"
 tap "FelixKratz/formulae"
 tap "snyk/tap"
 tap "jesseduffield/lazygit"
+tap "khanhas/tap"
 
+# spicetify spotify theme engine
+brew "spicetify-cli"
 # lazygit
 brew "lazygit"
 # snyk
