@@ -1,7 +1,4 @@
 **.old**
 **.env**
 
-config/
-!config/lvim
-!config/spicetify
-
+config/*
