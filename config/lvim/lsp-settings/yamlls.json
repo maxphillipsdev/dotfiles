@@ -1,0 +1,6 @@
+{
+  "yaml.schemaStore.url": "https://www.schemastore.org/api/json/catalog.json",
+  "yaml.schemas": {
+    "https://json.schemastore.org/github-action.json": ".github/*"
+  }
+}
