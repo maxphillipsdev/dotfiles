@@ -79,6 +79,12 @@ lvim.plugins = {
         -- Configuration here, or leave empty to use defaults
       })
     end
+  },
+  {
+    "vimsence/vimsence"
+  },
+  {
+    "mattn/emmet-vim"
   }
 }
 
