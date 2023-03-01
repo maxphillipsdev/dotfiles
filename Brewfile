@@ -35,8 +35,6 @@ brew "zplug"
 brew "mas"
 # Git
 brew "git"
-# Zsh shell
-brew "zsh"
 # Run your GitHub Actions locally 🚀
 brew "act"
 # GitOps Continuous Delivery for Kubernetes
