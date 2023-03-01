@@ -11,19 +11,7 @@ lvim.plugins = {
       require('symbols-outline').setup({ wrap = true })
     end
   },
-  { "zbirenbaum/copilot.lua",
-    event = { "VimEnter" },
-    config = function()
-      vim.defer_fn(function()
-        require("copilot").setup {
-          plugin_manager_path = get_runtime_dir() .. "/site/pack/packer",
-        }
-      end, 100)
-    end,
-  },
-
-  { "zbirenbaum/copilot-cmp",
-    after = { "copilot.lua", "nvim-cmp" },
+  { "github/copilot.vim"
   },
   {
     "iamcco/markdown-preview.nvim",
@@ -88,16 +76,15 @@ lvim.plugins = {
   }
 }
 
--- github copilot
-lvim.builtin.cmp.formatting.source_names["copilot"] = "(Copilot)"
-table.insert(lvim.builtin.cmp.sources, 1, { name = "copilot" })
-
 -- vim options
 vim.opt.shiftwidth = 2
 vim.opt.tabstop = 2
 vim.opt.relativenumber = true
 vim.opt.wrap = true
 vim.opt.termguicolors = true
+
+-- Copilot
+vim.g.copilot_assume_mapped = true
 
 -- general
 lvim.log.level = "info"
