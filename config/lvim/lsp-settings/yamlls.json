@@ -1,7 +1,0 @@
-{
-  "yaml.schemaStore.url": "https://www.schemastore.org/api/json/catalog.json",
-  "yaml.schemas": {
-    "https://json.schemastore.org/github-workflow.json": ".github/workflows/*",
-    "https://json.schemastore.org/github-action.json": ".github/actions/*"
-  }
-}

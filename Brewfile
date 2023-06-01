@@ -11,24 +11,16 @@ tap "khanhas/tap"
 
 # exa
 brew "exa"
-# spt spotify tui
-brew "spotify-tui"
-# spicetify spotify theme engine
-brew "spicetify-cli"
 # lazygit
 brew "lazygit"
 # snyk
 brew "snyk"
 # cocoapods
 brew "cocoapods"
-# sketchybar
-brew "sketchybar" 
 # ripgrep
 brew "ripgrep"
 # fzf
 brew "fzf"
-# grep but better
-brew "awk"
 # zplug (like vimplug but for zsh)
 brew "zplug"
 # Mac Apple Store CLI
@@ -37,8 +29,6 @@ brew "mas"
 brew "git"
 # Run your GitHub Actions locally 🚀
 brew "act"
-# GitOps Continuous Delivery for Kubernetes
-brew "argocd"
 # Extendable version manager with support for Ruby, Node.js, Erlang & more
 brew "asdf"
 # Utility for easily assuming AWS IAM roles from the command-line
@@ -53,22 +43,12 @@ brew "gh"
 brew "gnupg"
 # Open-source build automation tool based on the Groovy and Kotlin DSL
 brew "gradle"
-# Kubernetes package manager
-brew "helm"
 # User-friendly cURL replacement (command-line HTTP client)
 brew "httpie"
 # Lightweight and flexible command-line JSON processor
 brew "jq"
-# TCP port scanner, scans entire Internet in under 5 minutes
-brew "masscan"
-# MongoDB Shell to connect, configure, query, and work with your MongoDB database
-brew "mongosh"
 # Ambitious Vim-fork focused on extensibility and agility
 brew "neovim"
-# Development kit for the Java programming language
-brew "openjdk"
-# 📦🚀 Fast, disk space efficient package manager
-brew "pnpm"
 # Simplified and community-driven man pages
 brew "tldr"
 # Terminal multiplexer
@@ -79,12 +59,6 @@ brew "watchman"
 brew "hashicorp/tap/terraform"
 # Web debugging Proxy application
 cask "charles"
-# Terminal emulator as alternative to Apple's Terminal app
-cask "iterm2"
-# Kubernetes IDE
-cask "lens"
-# Collaboration platform for API development
-cask "postman"
 # Control your tools with a few keystrokes
 cask "raycast"
 # Standalone app for debugging React Native apps
