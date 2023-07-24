@@ -38,7 +38,7 @@ fi
 zplug load
 
 # nvim alias
-alias vim=lvim
+alias vim=nvim
 
 # enable autocd
 setopt autocd 
@@ -66,3 +66,6 @@ export ANDROID_HOME=$HOME/Library/Android/sdk
 export ANDROID_SDK_ROOT=$HOME/Library/Android/sdk
 export PATH=$PATH:$ANDROID_SDK_ROOT/emulator
 export PATH=$PATH:$ANDROID_SDK_ROOT/platform-tools
+
+# VSCode insiders
+alias codi=code-insiders
