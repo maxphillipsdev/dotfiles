@@ -20,11 +20,13 @@ source $ZPLUG_HOME/init.zsh
 
 # zplug plugins
 # Supports oh-my-zsh plugins and the like
-zplug "plugins/git",   from:oh-my-zsh
-zplug "spaceship-prompt/spaceship-prompt", use:spaceship.zsh, from:github, as:theme
 zplug "joshskidmore/zsh-fzf-history-search", from:github
 zplug "zsh-users/zsh-syntax-highlighting"
 zplug "birdhackor/zsh-exa-ls-plugin"
+zplug "plugins/git", from:oh-my-zsh
+
+# Setup starship (speedy prompt written in rust)
+eval "$(starship init zsh)"
 
 # Install plugins if there are plugins that have not been installed
 if ! zplug check --verbose; then
@@ -43,9 +45,6 @@ alias vim=nvim
 # enable autocd
 setopt autocd 
 
-# source asdf version manager
-. $(brew --prefix)/opt/asdf/libexec/asdf.sh
-
 # hook in direnv
 eval "$(direnv hook zsh)"
 export PATH="/usr/local/sbin:$PATH"
@@ -57,9 +56,6 @@ export FZF_DEFAULT_OPTS=" \
 --color=fg:#cad3f5,header:#ed8796,info:#c6a0f6,pointer:#f4dbd6 \
 --color=marker:#f4dbd6,fg+:#cad3f5,prompt:#c6a0f6,hl+:#ed8796"
 
-# GitHub Copilot CLI
-eval "$(github-copilot-cli alias -- "$0")"
-
 # Android SDK
 export ANDROID_HOME=$HOME/Library/Android/sdk
 
@@ -69,3 +65,9 @@ export PATH=$PATH:$ANDROID_SDK_ROOT/platform-tools
 
 # VSCode insiders
 alias codi=code-insiders
+
+# RTX CLI
+eval "$(~/.cargo/bin/rtx activate zsh)"
+
+# bun completions
+[ -s "/opt/homebrew/Cellar/bun/1.0.0/share/zsh/site-functions/_bun" ] && source "/opt/homebrew/Cellar/bun/1.0.0/share/zsh/site-functions/_bun"
