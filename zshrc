@@ -1,3 +1,5 @@
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+
 ############################################
 # Setup env vars
 #
@@ -61,7 +63,7 @@ export PATH=$PATH:$ANDROID_SDK_ROOT/platform-tools
 alias codi=code-insiders
 
 # RTX CLI
-eval "$(~/.cargo/bin/rtx activate zsh)"
+eval "$($(brew --prefix)/bin/rtx activate zsh)"
 
 # bun completions
 [ -s "/opt/homebrew/Cellar/bun/1.0.0/share/zsh/site-functions/_bun" ] && source "/opt/homebrew/Cellar/bun/1.0.0/share/zsh/site-functions/_bun"
