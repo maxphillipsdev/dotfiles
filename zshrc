@@ -1,4 +1,4 @@
-eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+eval "$(/opt/homebrew/bin/brew shellenv)"
 
 ############################################
 # Setup env vars
