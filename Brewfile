@@ -44,5 +44,8 @@ brew "tmux"
 brew "watchman"
 # Terraform
 brew "hashicorp/tap/terraform"
+# Starship prompt
+brew "starship"
+
 # JetBrainsMono
 cask "font-jetbrains-mono-nerd-font"
