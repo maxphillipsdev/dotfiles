@@ -79,11 +79,6 @@ _G.packer_plugins = {
     path = "/Users/max.phillips/.local/share/nvim/site/pack/packer/start/LuaSnip",
     url = "https://github.com/L3MON4D3/LuaSnip"
   },
-  ["auto-pairs"] = {
-    loaded = true,
-    path = "/Users/max.phillips/.local/share/nvim/site/pack/packer/start/auto-pairs",
-    url = "https://github.com/jiangmiao/auto-pairs"
-  },
   ["cmp-nvim-lsp"] = {
     loaded = true,
     path = "/Users/max.phillips/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
@@ -150,6 +145,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/max.phillips/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
+  },
+  ["telescope-fzf-native.nvim"] = {
+    loaded = true,
+    path = "/Users/max.phillips/.local/share/nvim/site/pack/packer/start/telescope-fzf-native.nvim",
+    url = "https://github.com/nvim-telescope/telescope-fzf-native.nvim"
   },
   ["telescope.nvim"] = {
     loaded = true,

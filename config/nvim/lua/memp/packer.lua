@@ -2,51 +2,64 @@
 vim.cmd [[packadd packer.nvim]]
 
 return require('packer').startup(function(use)
-  -- Packer can manage itself
-  use 'wbthomason/packer.nvim'
+	-- Packer can manage itself
+	use 'wbthomason/packer.nvim'
 
-  use {
-    'nvim-telescope/telescope.nvim', tag = '0.1.4',
-    -- or                            , branch = '0.1.x',
-    requires = { { 'nvim-lua/plenary.nvim' } } }
-  use("ellisonleao/gruvbox.nvim")
-  use('nvim-treesitter/nvim-treesitter', { run = ':TSUpdate' })
+	-- fzf for telescope
+	use { 'nvim-telescope/telescope-fzf-native.nvim', run = 'make' }
 
-  -- Mason
-  use {
-    "williamboman/mason.nvim",
-    "williamboman/mason-lspconfig.nvim",
-    "neovim/nvim-lspconfig",
-  }
+	-- telescope
+	use {
+		'nvim-telescope/telescope.nvim', tag = '0.1.4',
+		requires = { { 'nvim-lua/plenary.nvim' } },
+		extensions = {
+			fzf = {
+				fuzzy = true, -- false will only do exact matching
+				override_generic_sorter = true, -- override the generic sorter
+				override_file_sorter = true, -- override the file sorter
+				case_mode = "smart_case", -- or "ignore_case" or "respect_case"
+				-- the default case_mode is "smart_case"
+			}
+		}
+	}
+	use("ellisonleao/gruvbox.nvim")
+	use('nvim-treesitter/nvim-treesitter', { run = ':TSUpdate' })
 
-  -- Lsp-zero
-  use {
-    'VonHeikemen/lsp-zero.nvim',
-    branch = 'v3.x', requires = { --- Uncomment these if you want to manage LSP servers from neovim
-    -- {'williamboman/mason.nvim'},
-    -- {'williamboman/mason-lspconfig.nvim'},
+	-- Mason
+	use {
+		"williamboman/mason.nvim",
+		"williamboman/mason-lspconfig.nvim",
+		"neovim/nvim-lspconfig",
+	}
 
-    -- LSP Support
-    { 'neovim/nvim-lspconfig' },
-    -- Autocompletion
-    { 'hrsh7th/nvim-cmp' },
-    { 'hrsh7th/cmp-nvim-lsp' },
-    { 'L3MON4D3/LuaSnip' },
-  }
-  }
+	-- Lsp-zero
+	use {
+		'VonHeikemen/lsp-zero.nvim',
+		branch = 'v3.x', requires = { --- Uncomment these if you want to manage LSP servers from neovim
+		-- {'williamboman/mason.nvim'},
+		-- {'williamboman/mason-lspconfig.nvim'},
 
-  use({
-    "kylechui/nvim-surround",
-    config = function()
-      require("nvim-surround").setup({
-        -- Configuration here, or leave empty to use defaults
-      })
-    end
-  })
+		-- LSP Support
+		{ 'neovim/nvim-lspconfig' },
+		-- Autocompletion
+		{ 'hrsh7th/nvim-cmp' },
+		{ 'hrsh7th/cmp-nvim-lsp' },
+		{ 'L3MON4D3/LuaSnip' },
+	}
+	}
 
-  -- nvim-lualine
-  use {
-    'nvim-lualine/lualine.nvim',
-    requires = { 'nvim-tree/nvim-web-devicons', opt = true }
-  }
+	use({
+		"kylechui/nvim-surround",
+		config = function()
+			require("nvim-surround").setup({
+				-- Configuration here, or leave empty to use defaults
+			})
+		end
+	})
+
+	-- nvim-lualine
+	use {
+		'nvim-lualine/lualine.nvim',
+		requires = { 'nvim-tree/nvim-web-devicons', opt = true }
+	}
 end)

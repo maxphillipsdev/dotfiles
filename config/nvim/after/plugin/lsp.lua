@@ -36,3 +36,5 @@ cmp.setup({
     ['<CR>'] = cmp.mapping.confirm({ select = false }),
   })
 })
+
+require('telescope').load_extension('fzf')
