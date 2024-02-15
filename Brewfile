@@ -1,15 +1,12 @@
 tap "hashicorp/tap"
 tap "homebrew/bundle"
 tap "homebrew/cask"
-tap "homebrew/core"
 tap "buo/cask-upgrade"
 tap "homebrew/cask-fonts"
 tap "FelixKratz/formulae"
 tap "jesseduffield/lazygit"
 tap "khanhas/tap"
 
-# exa
-brew "exa"
 # lazygit
 brew "lazygit"
 # ripgrep

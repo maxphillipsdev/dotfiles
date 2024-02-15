@@ -24,7 +24,6 @@ source $ZPLUG_HOME/init.zsh
 # Supports oh-my-zsh plugins and the like
 zplug "joshskidmore/zsh-fzf-history-search", from:github
 zplug "zsh-users/zsh-syntax-highlighting"
-zplug "birdhackor/zsh-exa-ls-plugin"
 zplug "plugins/git", from:oh-my-zsh
 
 # Setup starship (speedy prompt written in rust)
@@ -63,7 +62,7 @@ export PATH=$PATH:$ANDROID_SDK_ROOT/platform-tools
 alias codi=code-insiders
 
 # RTX CLI
-eval "$($(brew --prefix)/bin/rtx activate zsh)"
+eval "$($(brew --prefix)/bin/mise activate zsh)"
 
 # bun completions
 [ -s "/opt/homebrew/Cellar/bun/1.0.0/share/zsh/site-functions/_bun" ] && source "/opt/homebrew/Cellar/bun/1.0.0/share/zsh/site-functions/_bun"
