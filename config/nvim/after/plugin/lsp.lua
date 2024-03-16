@@ -5,6 +5,14 @@ lsp_zero.on_attach(function(client, bufnr)
   lsp_zero.buffer_autoformat()
 end)
 
+require("conform").setup({
+  format_on_save = {
+    -- These options will be passed to conform.format()
+    timeout_ms = 500,
+    lsp_fallback = true,
+  },
+})
+
 local mason = require('mason')
 mason.setup({})
 
